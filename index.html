@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ektamission NGO</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: orange;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-box img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .hero {
+      background: linear-gradient(to right, orange, black);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .donate-btn {
+      background: orange;
+      color: black;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .donate-btn:hover {
+      background: darkorange;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    input, textarea {
+      width: 80%;
+      max-width: 500px;
+      padding: 10px;
+      margin: 10px auto;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      display: block; /* Centers the input boxes nicely */
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-box">
+    <img src="logo.png" alt="Ektamission Logo">
+    <h1>Ektamission</h1>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Our Work</a>
+    <a href="#donate">Donate</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Together for Humanity</h2>
+  <p>Unity beyond all religions — Ekta Mission</p>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Ektamission is a non-profit organization working for unity, peace, and social welfare.
+    We believe in helping humanity beyond caste, religion, and boundaries.
+  </p>
+</section>
+
+<section id="work" class="section">
+  <h2>Our Work</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Food Distribution</h3>
+      <p>Providing meals to the needy.</p>
+    </div>
+    <div class="card">
+      <h3>Healthcare</h3>
+      <p>Medical camps and health awareness.</p>
+    </div>
+  </div>
+</section>
+
+<section id="donate" class="section">
+  <h2>Donate Now</h2>
+  <p>Your small help can make a big difference. Scan the QR code below or use our UPI ID to donate directly to our welfare account.</p>
+  
+  <div style="background: white; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <img src="qr-code.Jpeg" alt="Donate via QR Code" style="width: 200px; height: 200px; border: 1px solid #ccc; padding: 10px;">
+    <h3 style="margin-top: 15px; color: #333;">UPI ID: ektawelfaretrust5531@sbi</h3>
+    <p style="font-size: 14px; color: #666;">Name: EKTA WELFARE TRUST </p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form action="/send-message" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="donate-btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Ektamission NGO | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

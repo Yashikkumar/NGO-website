@@ -1,0 +1,4 @@
+flask 
+streamlit==1.33.0
+gspread==6.1.0
+oauth2client==4.1.3
