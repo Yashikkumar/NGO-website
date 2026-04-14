@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 # Initialize Flask, pointing it to your 'public' folder
-app = Flask(__name__, static_folder='public', static_url_path='')
+app = Flask(__name__, static_folder='', static_url_path='')
 
 # --- GOOGLE SHEETS CONNECTION ---
 def get_sheet():
